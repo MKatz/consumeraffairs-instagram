@@ -17,7 +17,7 @@ $(document).ready(function() {
             success: function(data) {
                 //loops through to load 20 images
                 for (var i = 0; i < 20; i++) {
-                    var usertag = data.data[i].user.id;
+                    var usertag = data.data[i].user.username;
                     //search via usertag
                     if (usertag === searchValue) {
                         $("#instagram").append("<div><a href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a></div>");
