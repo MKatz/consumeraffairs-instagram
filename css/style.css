@@ -1,0 +1,20 @@
+#instagram div {
+  display: inline-block;
+}
+
+#topBar {
+    background: #c2e0f4;
+}
+
+#instaLogo {
+    margin-top: 8px;
+}
+
+.container {
+    background: #216ba2;
+}
+
+.overflow {
+    height: 750px;
+    overflow: scroll;
+}
