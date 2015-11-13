@@ -4,7 +4,20 @@
 
 #instagram p {
     color: red;
+    font-size: 20px;
     font-weight: bold;
+    position: relative;
+    bottom: 175px;
+    left: 0px;
+    visibility: hidden;
+}
+
+#instagram:hover p {
+    visibility: visible;
+}
+
+#instagram:hover img {
+    opacity: 0.5;
 }
 
 #topBar {
