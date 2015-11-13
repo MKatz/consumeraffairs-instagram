@@ -20,10 +20,10 @@ $(document).ready(function() {
                     var usertag = data.data[i].user.username;
                     //search via usertag
                     if (usertag === searchValue) {
-                        $("#instagram").append("<div><a href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a></div>");
+                        $("#instagram").append("<div><a href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a><p>" + data.data[i].likes.count + " likes</p></div>");
                     //if no usertag entered, load all images
                     } else {
-                        $("#instagram").append("<div><a href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a></div>");
+                        $("#instagram").append("<div><a href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a><p>" + data.data[i].likes.count + " likes</p></div>");
                     }
                 }
             }

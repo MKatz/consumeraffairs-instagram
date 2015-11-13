@@ -2,6 +2,11 @@
   display: inline-block;
 }
 
+#instagram p {
+    color: red;
+    font-weight: bold;
+}
+
 #topBar {
     background: #c2e0f4;
 }
