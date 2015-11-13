@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //API called when search button clicked
-    $('#search').on('click', function(e) {
+    $('#search').on('click', function() {
         //clears ig-div
         var imgDiv = $('.ig-div');
         imgDiv.remove();

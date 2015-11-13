@@ -7,6 +7,10 @@
 }
 
 #instaLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
     margin-top: 8px;
 }
 
@@ -15,6 +19,6 @@
 }
 
 .overflow {
-    height: 750px;
+    height: 700px;
     overflow: scroll;
 }
