@@ -6,8 +6,6 @@ $(document).ready(function() {
         imgDiv.remove();
         //clears HTML for each new load
         $('#instagram').html("");
-        //search value entered
-        var searchValue = $('#search-input').val();
         //API call
         $.ajax({
             type: "GET",
@@ -17,14 +15,8 @@ $(document).ready(function() {
             success: function(data) {
                 //loops through to load 20 images
                 for (var i = 0; i < 20; i++) {
-                    var usertag = data.data[i].user.username;
-                    //search via usertag
-                    if (usertag === searchValue) {
-                        $("#instagram").append("<div><a href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a><p>" + data.data[i].likes.count + " likes</p></div>");
-                    //if no usertag entered, load all images
-                    } else {
-                        $("#instagram").append("<div><a href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a><p>" + data.data[i].likes.count + " likes</p></div>");
-                    }
+                    //HTML added to div
+                    $("#instagram").append("<div><a href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a><p>" + data.data[i].likes.count + " likes</p></div>");
                 }
             }
         });
